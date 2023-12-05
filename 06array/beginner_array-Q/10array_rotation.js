@@ -12,4 +12,23 @@ function rotateArray(arr, k) {
 
 // Example
 const array10 = [1, 2, 3, 4, 5];
-console.log(rotateArray(array10, 2)); // Output: [4, 5, 1, 2, 3]
+console.log(rotateArray(array10, 8)); // Output: [4, 5, 1, 2, 3]
+
+//function slice
+// const array = [1, 3, 4, 5, 6];
+
+// const val = array.slice(3);
+
+// console.log(val);
+
+//practice
+
+function arrayRotate(arr, k) {
+  const n = arr.length;
+  k %= n;
+  return arr.slice(n - k).concat(arr.slice(0, n - k));
+}
+
+const arrays = [1, 2, 3, 4, 5, 6, 7, 8, 9, 5, 4, 3];
+
+console.log(arrayRotate(arrays, 5));

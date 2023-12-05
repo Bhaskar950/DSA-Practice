@@ -19,3 +19,11 @@ function evenNum(arr) {
 const val = [2, 4, 6, 7, 88];
 
 console.log(evenNum(val));
+
+function evenNum1(arr) {
+  return arr.filter((num) => num % 2 === 0);
+}
+
+const value = [2, 4, 5, 6];
+
+console.log(evenNum1(value));

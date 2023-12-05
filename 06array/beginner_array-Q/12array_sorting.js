@@ -10,3 +10,5 @@ function sortArray(arr) {
 // Example
 const array12 = [5, 2, 8, 1, 3];
 console.log(sortArray(array12)); // Output: [1, 2, 3, 5, 8]
+
+//pending
