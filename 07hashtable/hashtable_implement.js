@@ -118,4 +118,4 @@ console.log(myHashTable.get("age")); // Output: 25
 console.log(myHashTable.get("city")); // Output: New York
 
 myHashTable.remove("age");
-console.log(myHashTable.get("age")); // Output: null (key 'age' is removed)
+console.log(myHashTable.get("")); // Output: null (key 'age' is removed)
