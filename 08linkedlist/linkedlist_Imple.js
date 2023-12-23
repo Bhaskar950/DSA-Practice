@@ -94,6 +94,13 @@ class LinkedList {
     }
     return currentNode;
   }
+  remove(index) {
+    const leader = this.traverseToIndex(index - 1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+  }
 }
 
 const myLinkedlist = new LinkedList(10);
@@ -102,4 +109,6 @@ myLinkedlist.prepend(1);
 myLinkedlist.insert(1, 8); // Inserting 8 at index 1
 // Output: [1, 8, 10, 5]
 myLinkedlist.insert(3, 55);
+myLinkedlist.remove(3);
+myLinkedlist.remove(3);
 myLinkedlist.printList();
